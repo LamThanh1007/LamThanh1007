@@ -3,32 +3,45 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : Dec 22, 2016, 11:26:01 PM
     Author     : Administrator
 */
 
-body {
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
   background-image: url("../img/cake-1114056.jpg");
-  background-size: 100%;
-  background-repeat: repeat-y;
+  background-size: cover;
+  background-repeat: repeat;
   font-family: "Fredoka One", cursive;
   font-weight: bold;
   color: white;
+  background-repeat: no-repeat;
+  height: 100%;
 }
-.img-card { 
+.img-card {
   height: 582px;
   margin-bottom: 20px;
 }
+
+.img-thumbnail {
+  cursor: pointer;
+}
+
 h1.heading {
   font-family: "Pacifico", cursive;
 }
-.container-card{
+.container-card {
   position: relative;
 }
 .jumbotron {
   opacity: 0.4;
-  filter: alpha(opacity=50); 
+  filter: alpha(opacity=50);
   background-color: rgb(0 0 0 / 0%);
 }
 h4 {
@@ -50,65 +63,62 @@ h4 {
   padding-top: 100px;
   opacity: 0.5;
   filter: alpha(opacity=50); /* For IE8 and earlier */
- */
-.containeri {
+*/ .containeri {
   position: relative;
   text-align: center;
 }
+
 .top-right {
   position: absolute;
-  top: 25px;
+  top: 6%;
   right: 25px;
   color: #728e98;
   font-size: 90%;
 }
-.btn-love{
+.btn-love {
   background-color: #728e98;
   color: #ffffff;
 }
 
-.btn-cancel{
-
+.btn-cancel {
   color: #728e98;
 }
 
-
 .top-left {
   position: absolute;
-  top: 132px;
-  right: 29px;
+  top: 33%;
+  right: 10px;
   color: #6c7c6b;
   font-size: 80%;
 }
 .center {
   position: absolute;
-  bottom: 115px;
-  left: 250px;
+  top: 57%;
+  right: 10px;
   color: #6c7c6b;
   font-size: 80%;
 }
 .and {
   position: absolute;
-  bottom: 160px;
-  left: 240px;
+  top: 45%;
+  right: 10px;
   color: #6c7c6b;
   font-size: 80%;
 }
 
 .bottom-right {
   position: absolute;
-  bottom: 253px;
-  right: 20px;
+  top: 21%;
+  right: 10px;
   color: #6c7c6b;
   font-size: 80%;
 }
 .bottom-left {
   position: absolute;
-  bottom: 5px;
-  left: 270px;
+  bottom: 3%;
+  right: 18%;
   color: #b78690;
 }
-
 
 .waiting {
   z-index: 9999 !important;
@@ -138,5 +148,17 @@ h4 {
   margin: auto;
   /* max-width: 500px; */
   text-align: center;
+}
+
+@media (max-width: 1023px) {
+  img.img-responsive {
+    width: 100%;
+    height: auto !important;
+  }
+
+  .containeri {
+    font-size: 20px;
+  }
+
 
 }
